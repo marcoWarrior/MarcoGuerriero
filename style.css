@@ -262,6 +262,7 @@ h1::after {
   }
 }
 
+
 /* Stili per il menu di navigazione */
 nav {
   position: fixed;
@@ -291,45 +292,12 @@ nav a:hover {
 
 /* Media query per dispositivi mobili */
 @media (max-width: 768px) {
-  #hamburger-menu {
-    display: block;
-    cursor: pointer;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1001;
-  }
-
-  #hamburger-menu .bar {
-    width: 30px;
-    height: 4px;
-    background-color: var(--neon-blue);
-    margin: 6px 0;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-  }
-
-  #hamburger-menu.open .top {
-    transform: rotate(45deg);
-    top: 10px;
-    /* sposta più in alto */
-  }
-
-  #hamburger-menu.open .middle {
-    opacity: 0;
-  }
-
-  #hamburger-menu.open .bottom {
-    transform: rotate(-45deg);
-    top: -10px;
-    /* sposta più in basso */
-  }
 
   nav {
     position: fixed;
     width: 100%;
     background-color: var(--dark-bg);
-    display: none;
+    display: flex;
     flex-direction: row;
     align-items: center;
     z-index: 100;
@@ -337,21 +305,14 @@ nav a:hover {
     text-align: left;
   }
 
-  nav.open {
-    display: flex;
-    justify-content: center;
-    /* Centra gli elementi orizzontalmente */
-    align-items: center;
-    /* Centra gli elementi verticalmente */
-  }
-
-
   nav a {
     margin: 0.5rem;
     font-size: 0.7rem;
     text-align: center;
   }
+
 }
+
 
 .grid {
   display: grid;
@@ -456,6 +417,22 @@ footer {
 #theme-toggle .moon {
   display: block;
 }
+
+@media (max-width: 768px) {
+  #theme-toggle {
+    top: 40px; /* Posiziona il pulsante leggermente più in basso */
+    left: 10px; /* Mantieni la stessa distanza laterale */
+    width: 40px; /* Riduci la larghezza del pulsante */
+    height: 40px; /* Riduci l'altezza del pulsante */
+    padding: 5px; /* Riduci il padding */
+  }
+
+  #theme-toggle svg {
+    width: 20px; /* Rimpicciolisci l'icona */
+    height: 20px;
+  }
+}
+
 
 .high-contrast #theme-toggle {
   color: var(--dark-bg);

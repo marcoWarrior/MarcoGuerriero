@@ -70,17 +70,17 @@ window.addEventListener('scroll', () => {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Seleziona l'elemento hamburger e il menu
-    const hamburger = document.getElementById('hamburger-menu');
-    const nav = document.getElementById('nav');
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Seleziona l'elemento hamburger e il menu
+//     const hamburger = document.getElementById('hamburger-menu');
+//     const nav = document.getElementById('nav');
 
-    // Aggiungi l'evento di clic per il toggle
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('open'); // Aggiungi o rimuovi la classe 'open'
-        nav.classList.toggle('open'); // Mostra o nascondi il menu
-    });
-});
+//     // Aggiungi l'evento di clic per il toggle
+//     hamburger.addEventListener('click', () => {
+//         hamburger.classList.toggle('open'); // Aggiungi o rimuovi la classe 'open'
+//         nav.classList.toggle('open'); // Mostra o nascondi il menu
+//     });
+// });
 
 
 

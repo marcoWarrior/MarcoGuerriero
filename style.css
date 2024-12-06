@@ -420,16 +420,14 @@ footer {
 
 @media (max-width: 768px) {
   #theme-toggle {
-    top: 40px; /* Posiziona il pulsante leggermente più in basso */
-    left: 10px; /* Mantieni la stessa distanza laterale */
-    width: 40px; /* Riduci la larghezza del pulsante */
-    height: 40px; /* Riduci l'altezza del pulsante */
+    top: 5px; /* Posiziona il pulsante leggermente più in basso */
+    right: 2px; /* Mantieni la stessa distanza laterale */
     padding: 5px; /* Riduci il padding */
   }
 
   #theme-toggle svg {
-    width: 20px; /* Rimpicciolisci l'icona */
-    height: 20px;
+    width: 12px; /* Metà della dimensione originale */
+    height: 12px; /* Metà della dimensione originale */
   }
 }
 
